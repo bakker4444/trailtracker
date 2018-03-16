@@ -26,10 +26,10 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        distanceLabel.text = String(format: "%.0f", distance!) + " meters"
-        weightLabel.text = String(format: "%.0f", (0.63 * weight! * 1.6 * distance! / 1000)) + " Calories BURNED!!!!!"
-        timeLabel.text = time
-        avgspeedLabel.text = String(format: "%.2f", avgspeed!) + " mph"
+        distanceLabel.text = "Total Distance: " + String(format: "%.0f", distance!) + " meters"
+        weightLabel.text = "Total Calories Burned: " + String(format: "%.0f", (0.63 * weight! * 1.6 * distance! / 1000))
+        timeLabel.text = "Total Time: " + time!
+        avgspeedLabel.text = "Average Speed: " + String(format: "%.2f", avgspeed!) + " mph"
     }
 
     override func didReceiveMemoryWarning() {
